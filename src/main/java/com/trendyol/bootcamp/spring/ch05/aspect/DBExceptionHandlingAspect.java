@@ -5,9 +5,11 @@ import org.aspectj.lang.annotation.AfterThrowing;
 import org.aspectj.lang.annotation.Aspect;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.stereotype.Component;
 
 
-@Aspect	
+@Aspect
+@Component
 public class DBExceptionHandlingAspect {
 	
 	public static final String EMAIL_FAILURE_MSG = "Failed sending an email to Mister Smith : ";
